@@ -1,0 +1,23 @@
+﻿@model ComplaintManagementSystem.Models.UserModel
+
+<div class="login-box" style="background: linear-gradient(#141e30, #243b55);">
+    <h2>Login</h2>
+    @using (Html.BeginForm())
+    {
+        <form>
+            <div class="user-box">
+                <input type="text" name="UserName" required="">
+                <label>Username</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="Passwords" required="">
+                <label>Password</label>
+            </div>
+            <div style="display: flex;">
+                <input id="login-btn" class="btn btn-md btn-primary" type="submit" value="Submit" />
+                <span style="color: white; margin-left: 25px;">Do not have account? </span>
+                <a style="color: palegreen; text-decoration: none; margin-left: 5px;" asp-area="" asp-controller="User" asp-action="Register">Register</a>
+            </div>
+        </form>
+    }
+</div>

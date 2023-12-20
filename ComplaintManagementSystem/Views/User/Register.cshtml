@@ -1,0 +1,33 @@
+﻿<div class="login-box" style="background: linear-gradient(#141e30, #243b55);">
+    <h2>Register</h2>
+    @using (Html.BeginForm())
+    {
+        <form>
+            <div class="user-box">
+                <input type="text" name="FirstName" required="">
+                <label>First Name</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="LastName" required="">
+                <label>Last Name</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="Email" required="">
+                <label>Email</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="UserName" required="">
+                <label>Username</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="Passwords" required="">
+                <label>Password</label>
+            </div>
+            <div style="display: flex;">
+                <input type="submit" value="Submit" class="btn btn-md btn-primary" />
+                <span style="color: white; margin-left: 60px;">Already Registered? </span>
+                <a style="color: palegreen; text-decoration: none; margin-left: 5px;" asp-area="" asp-controller="User" asp-action="Login">Login</a>
+            </div>
+        </form>
+    }
+</div>
